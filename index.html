@@ -1,0 +1,226 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+  <title>CSC 196V  Assignment 2</title>
+  <style>
+* { padding: 0; margin: 0; }
+
+body {
+  margin: 0 auto 0 auto;
+  padding: 0;
+  background-color: #33333f;
+  width: 840px;
+  font-family: "Avenir", "Avenir Next", Helvetica Neue, Arial;
+  font-size: 0.95em;
+}
+
+a, a:visited { text-decoration: none; color: #7533f4; }
+a:hover { text-decoration: underline; color: #f4b014; }
+img, a.img, a:hover.img { border: none; }
+
+img {
+  max-width: 800px;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #492a7c;
+  background-color: inherit;
+  font-weight: normal;
+  padding: 0 0 5px 0;
+  margin: 15px 0 0 0;
+  border: none;
+  clear: right;
+}
+h1 { font-size: 18pt; margin:  5px 0 10px 0; line-height: 28px; }
+h2 { font-size: 14pt; margin: 30px 0 15px 0; letter-spacing: 0.01em; border-bottom: 1px solid #ccc;  line-height: 20px;}
+h3 { font-size: 13pt; }
+h4 { font-size: 12pt; }
+h5 { font-size: 11pt; }
+p { margin: 0 0 10px 0; }
+hr { border: 0px; border-top: 1px solid #ccc; height: 0px; }
+ol { margin: 1em; }
+
+.content {
+  margin: 0;
+  padding: 15px 20px;
+  background-color: #ffffff;
+}
+
+.article {
+  line-height: 1.5em;
+}
+
+.entry  {
+  border-top: 1px solid #ddd;
+  padding-top: 2px;
+  margin-top: 3em;
+}
+  </style>
+</head>
+
+<body>
+<div class='content'>
+
+<section>
+  <h1>Assignment 2: Exploratory Data Analysis</h1>
+
+  <p>
+    <strong>Rutvik Patel</strong>
+  </p>
+</section>
+
+<section>
+  <h2>Dataset</h2>
+
+  <p>
+    <b>What is this data about? Who produced this dataset? Why are you interested in it?</b><br/>
+    <br>
+  
+    The dataset which I choose is "World Climate Change". The dataset contains information about the factors which affect climate change around the world and the steps countries have taken to reduce its effect.<br><br>
+    This dataset is recorded and produced by the World Bank organization. It stresses to study the trends and patterns of what are main reasons for climate change? What quick steps need to take to reduce it and to save the earth.<br><br>
+    Climate change is one of the most important issue the world is facing right now. Climate change is causing a wide range of impacts today. Extreme weather such as heatwaves, droughts, hurricanes and flooding rains and many more. These climate impacts threaten both the environment and our society.
+    The climate change occurs due many factors increasing population, large amount of the c02 emission, destruction of the forest and agriculture land.
+
+    
+  </p>
+
+  <p>
+    The data is available online at:
+    <strong>
+        <ul class='content'>
+            <li> <a href="https://github.com/ZeningQu/World-Bank-Data-by-Indicators/tree/master/climate-change">https://github.com/ZeningQu/World-Bank-Data-by-Indicators/tree/master/climate-change</a></li>
+            <li><a href="https://data.worldbank.org/indicator/EG.ELC.RNEW.ZS">https://data.worldbank.org/indicator/EG.ELC.RNEW.ZS</a></li>
+           
+        </ul>
+    </strong>
+  </p>
+</section>
+
+<section>
+  <h2>Initial Analysis Questions</h2>
+  <ol>
+    <li>Is climate change the main reason behind the increase in natural disasters and calamities?</li>
+    <li>Which countries emitted highest amount co2 around the world?</li>
+    <li>Which countries produce the highest amount of energy from renewable resources?</li>
+    <li>what is an increase in the urban population over time?</li>
+    <li>Which countries have highest population ?
+    </li>
+  </ol>
+</section>
+
+<section>
+  <h2>Discoveries &amp; Insights</h2>
+
+  <div class="entry">
+      <p class="caption">Q1</p>
+    <img src="C02.png" />
+    <p class="caption">
+      The world map shows the counties which emitted the maximum number of co2 gas in the air. China produces the highest co2 in the atmosphere which is double compared to co2 emitted by the USA which is second highest after the China.
+      Co2 is released through human activities such as deforestation and burning fossil fuels of the generation of the electricity and running of vehicles. Emission of co2 in the atmosphere make earth warmer and make weather and season unpredictable. It makes winter colder and summer hotter and cause unpredictable rainfall.
+
+    </p>
+  </div>
+
+  <br>
+  
+  <div class="entry">
+      <p class="caption">Q2</p>
+    <img src="Renewable.png" />
+    <p class="caption">
+      This visualization shows which counties have produced the highest amount of energy from a renewable resource such as wind, solar and water.  
+      From the diagram, we can say that china produces the highest amount of energy from renewable followed by other countries like India and the USA.
+      
+      <br><br>
+      Renewable energy still has a long way to go to replace fossil fuels and become a primary source of energy consumption but things are going in the right direction. The majority of the world counties have started using renewable energy to produce energy.
+    </p>
+  </div>
+
+  
+  <div class="entry">
+    <p class="caption">Q3</p>
+    <img src="IncreaseInNaturalCalamity.png"/>
+    <p class="caption">
+      This visualization shows the increase in natural calamities and disasters have increased. The highest amount of natural calamities was recorded in the year 2005 which was 432 and in the year 1921, there were just 2 natural calamities recorded as per dataset.
+    </p>
+  </div>
+
+  <div class="entry">
+      <p class="caption">Q4</p>
+    <img src="Total_Population.png" />
+    <p class="caption">
+      This is a straight forward visualization that shows the top 15 countries with the highest number of population in 2014. These countries produce a large amount of greenhouse and co2 gases in the atmosphere as shown in section1. So, we can say that a larger population more will be emission on co2 and greenhouse gases.
+    </p>
+  </div>
+
+  <div class="entry">
+      <p class="caption">Q5</p>
+    <img src="UrbanGrowth.png" />
+    <p class="caption">
+        This visualization shows the percentage of growth in the urban population in India and Germany throughout the years 1960 to 2017.  From the line graph, we can say that there has been a constant growth in the urban population in India. In 1980 India has a large percentage increase in the urban population. On the other side, there have not significant growth in the urban population in Germany. The trends also show there was a decrease in growth in Germany. In the year 2011 Germany has the least urban population growth which was  -1.6 %.<br><br>
+        Increasing in urban population leads to increasing use in a different resource like electricity, vehicles, and construction of new houses which leads to greater air pollution from emission of co2 and other greenhouse gases.  
+    </p>
+  </div>
+
+  <div class="entry">
+      <p class="caption">Q6</p>
+    <img src="%PercentageOfRenewableEnergy.png" />
+    <p class="caption">
+        This visualization provides information about the percentage of electricity generated from different resources from the year 2006 to 2017.
+        <br>
+       <br> <b>Coal</b><br>
+        In 2006 a large amount of electricity was generated by coal which was 29.70%  Which almost remain constant around 27 % to 28 %.  It should be decreased in the upcoming year because it releases a large number of greenhouse gases in the atmosphere.
+        <br><br><b>Natural Gas</b><br>
+        From the visualization, we can see that electricity production from natural gas was 27.90 % in 2006 but in 2017 its production decrease by 15% which was just 12.90 % which is a good sign. It emitted a large amount of carbon dioxide, monoxide, and other carbon compounds in the atmosphere contributing to the greenhouse effect.
+        <br><br><b>Nuclear</b><br>
+        Electricity produced from nuclear resources seems to remain constant, not a quick deviation can be seen in the trends. It does not emit a large number of greenhouse gases. It produces a large amount of Radioactive waste which is a form of solid and liquid and must be taken care of and disposed of carefully.
+        <br><br><b>Renewable Resource</b><br>
+        There has been significant growth in electricity produces by renewable resources from the year 2006 to the year 2017. We can take this as positive trends as more use of renewable resources is taken into implementation.
+
+    </p>
+  </div>
+
+  <div class="entry">
+      <p class="caption">Q7</p>
+    <img src="greenhousegases.png" />
+    <p class="caption">
+        The visualization is a good way to visualize which countries have a large emission of greenhouse gages in the year 2012. China emits the highest amount of greenhouse gases which followed other populated countries like India, Russia, and the United States.
+    </p>
+  </div>
+
+  <div class="entry">
+      <p class="caption">Q8</p>
+    <img src="DifferentTypeOfDisasters.png" />
+    <p class="caption">
+        This bar graph shows the different types (floor, Extreme temperature, wildfire, landslide, Earthquake, etc)  of natural calamities occurs in the year 2017. This helps us to get information natural calamities that occur most in the year 2017. As we can see there 109 floors reported in the year 2017 and furthermore, we can analyze which locations are most affects by different calamities.
+    </p>
+  </div>
+
+  <div class="entry">
+      <p class="caption">Q9</p>
+    <img src="agricultureLand.png" />
+    <p class="caption">
+      This shows the comparison of the increase and decrease of agriculture land in Australia, the United States, Brazil, China, and Canada. The agriculture land in brazil and china increased from 1960 to 2015 and the other side decreasing trends are shown in Australia and the United States.
+    </p>
+  </div>
+
+  <div class="entry">
+      <p class="caption">Q10</p>
+    <img src="MiniTemperature.png" />
+    <p class="caption">
+        This visualization shows the minimum temperature of different countries around the world. From this visualization, we can see that Greenland has -29 degrees celsius which is lowest around the whole world in year 2013. The countries in orange color have high minimum temperature and countries in blue color have low maximum temperature.
+    </p>
+  </div>
+
+  <div class="entry">
+    <h3>Summary</h3>
+    <p>
+ 
+      Working with this assignment was quite a great experience from cleaning the data to analyzing the data and figuring out the question which to took and how to form an overall visualization. I learn a lot of amazing functionality which are provided by Tableau. It was quite a challenging task to visualize when the data is unnormal. It took me a lot of time to make in a proper visualize format. It learns a lot about how to make the visualization more effective and make it speak trends and patterns just by seeing it.
+
+    </p>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
